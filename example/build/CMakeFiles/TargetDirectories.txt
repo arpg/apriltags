@@ -1,0 +1,2 @@
+/Users/gsibley/Code/Source/GW/Dev/gsibley/apriltags/example/build/CMakeFiles/findtargets.dir
+/Users/gsibley/Code/Source/GW/Dev/gsibley/apriltags/example/build/CMakeFiles/gettruth.dir
