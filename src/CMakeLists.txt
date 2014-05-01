@@ -1,5 +1,10 @@
 
-add_library( apriltags
+project( apriltag )
+include( def_library )
+
+add_definitions(-msse4.2 -pthread  -g -std=gnu99 -Wall -Wno-unused-parameter -Wno-format-zero-length -O3)
+
+set(APRIL_SRCS
     apriltag.c
     graymodel.c 
     image_f32.c 
@@ -17,10 +22,8 @@ add_library( apriltags
     zhash.c
     )
 
-# Make possible calling find_package( apriltags 1.1 )
-#list( APPEND EXPORT_INCLUDES /opt/local/include /usr/include )
-list( APPEND EXPORT_LIBRARIES pthread m )
-#list( APPEND EXPORT_LIBRARY_DIRS /opt/lib )
-
-export_library( apriltags 1 2 )
+def_library(apriltags
+  SOURCES ${APRIL_SRCS}
+  LINK_LIBS m pthread
+  )
 
