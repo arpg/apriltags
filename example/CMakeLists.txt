@@ -30,15 +30,15 @@ include_directories(
     ${apriltags_INCLUDE_DIRS}
     )
 
-add_executable( gettruth gettruth.cpp )
+#add_executable( gettruth gettruth.cpp )
 
-target_link_libraries( gettruth
-  ${OpenCV2_LIBRARIES} 
-  ${CERES_LIBRARIES} 
-  ${GFlags_LIBRARIES}
-  ${GLog_LIBRARIES}
-  ${Calibu_LIBRARIES}
-  )
+#target_link_libraries( gettruth
+#  ${OpenCV2_LIBRARIES}
+#  ${CERES_LIBRARIES}
+#  ${GFlags_LIBRARIES}
+#  ${GLog_LIBRARIES}
+#  ${Calibu_LIBRARIES}
+#  )
 
 add_executable( findtargets findtargets.cpp )
 

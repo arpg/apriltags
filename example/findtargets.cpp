@@ -9,7 +9,8 @@
 
 #include <calibu/cam/camera_crtp.h>
 #include <calibu/cam/camera_models_crtp.h>
-#include <calibu/cam/camera_crtp_interop.h>
+//#include <calibu/cam/camera_crtp_interop.h>
+#include <calibu/cam/camera_crtp_impl.h>
 
 #include <HAL/Camera/CameraDevice.h>
 
