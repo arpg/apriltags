@@ -5,22 +5,14 @@
 #include <HAL/Camera/CameraDevice.h>
 
 int main() {
+#if 0
   hal::Camera camera = hal::Camera( hal::Uri("opencv:[id=0]") );
   std::shared_ptr<hal::ImageArray> images = hal::ImageArray::Create();
   std::shared_ptr<hal::Image> im;
   std::cout << "OK so far." << std::endl;
-  images.
-  while(1);
-  {
-  if( camera.Capture(*images) ){
-    im = images->at(0);
-    if( im->Width() != width ){
-      printf("error camera width and image width do not match\n");
-      return -1;
-    }
-  }
+#endif
 
-#if 0
+#if 1
   cv::VideoCapture cap;
   cap.open(0);
 
